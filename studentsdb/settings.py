@@ -8,7 +8,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 from django.conf import global_settings
-
+from .db import DATABASES
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -58,7 +58,6 @@ WSGI_APPLICATION = 'studentsdb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-from .db import DATABASES
 #WE MOVED DATABASE TO db.py
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
