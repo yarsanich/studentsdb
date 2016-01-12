@@ -24,7 +24,7 @@ def groups_list(request):
     except EmptyPage:
         # If page is out of range (e.g. 9999), deliver
         # last page of results.
-        gorups = paginator.page(paginator.num_pages)
+        groups = paginator.page(paginator.num_pages)
     return render(request, 'students/groups_list.html',
         {'groups': groups})
 
