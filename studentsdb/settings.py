@@ -93,3 +93,12 @@ TEMPLATE_CONTEXT_PROCESSORS = \
 """
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'media')
+#email setting
+#smtp server details
+ADMIN_EMAIL = 'admin@studentsdb.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'nezn27@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
